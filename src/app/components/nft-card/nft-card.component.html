@@ -1,0 +1,22 @@
+<div class="nft-card">
+    <div class="collection">
+        <img src="../../../assets/img/tag.svg" alt="">
+        <p>{{nft.collectionTitle}}</p>
+    </div>
+    <div class="owner_data">
+        <img src="" alt="" class="portrait">
+        <div class="title_owner">
+            <p id="title">{{nft.title}}</p>
+            <p id="owner">{{nft.owner}}</p>
+        </div>
+    </div>
+    <div class="price">
+        <img src="../../../assets/img/ethereum.svg" alt="">
+        <p>{{nft.price}}</p>
+    </div>
+    <p class="quantity">{{nft.quantity}}</p>
+    <p class="from">{{nft.from}}</p>
+    <p class="to">{{nft.to}}</p>
+    <p class="time">{{nft.time | date:"ss"}}s ago</p>
+     <!--TODO: add timePassed pipe to time -->
+</div>

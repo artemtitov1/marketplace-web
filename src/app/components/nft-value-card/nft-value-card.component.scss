@@ -1,0 +1,53 @@
+p {
+    margin: 0;
+}
+
+.value-card {
+    display: flex;
+    border: 1px solid #747681;
+    max-width: 1320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 93px 18px 25px;
+}
+
+.collection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 14%;
+}
+
+.portrait {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.volume, .floor {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.volume {
+    margin-right: 6.4%;
+}
+
+.day {
+    margin-right: 6%;
+}
+
+.week {
+    margin-right: 4.8%;
+}
+
+.owners {
+    margin-right: 114px;
+}
+
+.floor {
+    margin-right: 9.2%;
+}
