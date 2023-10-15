@@ -6,14 +6,14 @@
     </div>
     <div class="volume">
         <img src="../../../assets/img/ethereum.svg" alt="" class="ethereum">
-        <p class="volume__value">{{nft.volume}}</p>
+        <p class="volume__value">{{nft.volume | number:'.0-2'}}</p>
     </div>
-    <p class="day">{{nft.day_change}}</p>
-    <p class="week">{{nft.week_change}}</p>
+    <p class="day" [style.color]="(nft.day_change>=0) ? '#34CAA5' : '#F94025'">{{nft.day_change | percent:".0-2"}}</p>
+    <p class="week" [style.color]="(nft.week_change>=0) ? '#34CAA5' : '#F94025'">{{nft.week_change | percent:".0-2"}}</p>
     <div class="floor">
         <img src="../../../assets/img/ethereum.svg" alt="" class="ethereum">
-        <p class="floor__value">{{nft.floor_price}}</p>
+        <p class="floor__value">{{nft.floor_price | degreePrefix}}</p>
     </div>
-    <p class="owners">{{nft.owners}}</p>
-    <p class="assets">{{nft.assets}}</p>
+    <p class="owners">{{nft.owners | degreePrefix}}</p>
+    <p class="assets">{{nft.assets | degreePrefix}}</p>
 </div>

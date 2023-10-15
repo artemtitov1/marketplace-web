@@ -8,8 +8,12 @@ import { ButtonFillComponent } from './components/button-fill/button-fill.compon
 import { ButtonMediumComponent } from './components/button-medium/button-medium.component';
 import { ButtonMediumFillComponent } from './components/button-medium-fill/button-medium-fill.component';
 import { NftCardComponent } from './components/nft-card/nft-card.component';
-import { TimePassedPipe } from './pipes/time-passed.pipe';
 import { NftValueCardComponent } from './components/nft-value-card/nft-value-card.component';
+import { DegreePrefixPipe } from './pipes/degree-prefix.pipe';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { BlogCardComponent } from './components/blog-card/blog-card.component';
+import { ShortDetailsCardComponent } from './components/short-details-card/short-details-card.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +23,12 @@ import { NftValueCardComponent } from './components/nft-value-card/nft-value-car
     ButtonMediumComponent,
     ButtonMediumFillComponent,
     NftCardComponent,
-    TimePassedPipe,
     NftValueCardComponent,
+    DegreePrefixPipe,
+    ProductCardComponent,
+    BlogCardComponent,
+    ShortDetailsCardComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

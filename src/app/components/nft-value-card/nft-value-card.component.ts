@@ -11,8 +11,8 @@ export class NftValueCardComponent {
     id: 1,
     title: 'CryptoPunks',
     volume: 133871.43,
-    day_change: "",
-    week_change: "",
+    day_change: 0.23,
+    week_change: -0.15,
     floor_price: 133,
     owners: 3200,
     assets: 10000
