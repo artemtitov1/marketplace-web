@@ -1,0 +1,46 @@
+.card {
+    max-width: 320px;
+    min-width: 257px;
+    border: 1px solid #CDD6D7;
+}
+
+.card__img {
+    width: 100%;
+    height: 352px;
+    min-width: 257px;
+    background-color: #C4C4C4;
+    vertical-align: top;   
+}
+
+.card__info {
+    padding: 11px 20px 11px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user__text-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.user__portrait {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+}
+
+.user__name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175%;
+    color: #04091E;
+}
+
+.user__price {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 180%;
+    color: rgba(4, 9, 30, 0.60);
+}

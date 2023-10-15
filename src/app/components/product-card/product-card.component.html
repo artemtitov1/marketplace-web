@@ -1,0 +1,28 @@
+<div class="card">
+  <img class="card__img" src="" alt="" />
+  <div class="card__info">
+    <div class="info_tag">
+      <span [textContent]="tag"></span>
+    </div>
+    <div class="user_time">
+      <div class="user">
+        <img src="" alt="" class="user__portrait" />
+        <span class="user__name">{{ info.owner }}</span>
+      </div>
+      <p class="time-left">
+        <span class="time-left-value">{{ time_left }}</span> Left
+      </p>
+    </div>
+    <span class="title">{{info.title}}</span><br />
+    <span class="highest_bid">Highest bid</span>
+    <div class="bid-value_likes">
+      <span
+        class="highest_bid-value"
+        [textContent]="info.highest_bid + ' ETH'"></span>
+      <div class="likes">
+        <img class="like-icon" src="../../../assets/img/heart.svg" alt="" />
+        <span class="likes_value">{{info.likes | degreePrefix}}</span>
+      </div>
+    </div>
+  </div>
+</div>
