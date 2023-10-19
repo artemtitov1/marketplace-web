@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PathLike } from 'fs';
-import { ProductCard } from 'src/app/models/ProductCard';
+import { ProductCard } from 'src/app/core/models/ProductCard';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

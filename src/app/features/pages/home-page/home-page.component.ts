@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductCard } from 'src/app/models/ProductCard';
-import { ProductCardService } from 'src/app/services/ProductCard/product-card.service';
+import { ProductCard } from 'src/app/core/models/ProductCard';
+import { ProductCardService } from 'src/app/core/services/product-card.service';
 
 @Component({
   selector: 'app-home-page',
