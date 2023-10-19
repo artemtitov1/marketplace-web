@@ -9,4 +9,7 @@ export class ButtonLargeComponent {
   
   @Input()
   value?: string;
+
+  @Input()
+  color_transparent?: boolean;
 }

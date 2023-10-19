@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DegreePrefixPipe implements PipeTransform {
 
-  transform(value: number | undefined): string | null{
+  transform(value: number | undefined | null): string | null | undefined{
     if ( !value ) {
       return null;
     }

@@ -7,21 +7,20 @@
     <div class="user_time">
       <div class="user">
         <img src="" alt="" class="user__portrait" />
-        <span class="user__name">{{ info.owner }}</span>
+        <span class="user__name">{{ info.owner | async }}</span>
       </div>
       <p class="time-left">
         <span class="time-left-value">{{ time_left }}</span> Left
       </p>
     </div>
-    <span class="title">{{info.title}}</span><br />
+    <span class="title">{{info.title | async}}</span><br />
     <span class="highest_bid">Highest bid</span>
     <div class="bid-value_likes">
       <span
-        class="highest_bid-value"
-        [textContent]="info.highest_bid + ' ETH'"></span>
+        class="highest_bid-value">{{info.highest_bid | async | number:'.0-2'}} ETH</span>
       <div class="likes">
         <img class="like-icon" src="../../../assets/img/heart.svg" alt="" />
-        <span class="likes_value">{{info.likes | degreePrefix}}</span>
+        <span class="likes_value">{{info.likes | async | degreePrefix}}</span>
       </div>
     </div>
   </div>

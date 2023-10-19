@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { ProductCard } from 'src/app/models/ProductCard';
 
 @Component({
@@ -7,14 +7,9 @@ import { ProductCard } from 'src/app/models/ProductCard';
   styleUrls: ['./product-card.component.scss']
 })
 export class ProductCardComponent implements OnInit{
-  info: ProductCard = {
-    id: 1,
-    owner: 'User Artists',
-    title: 'The Rusty Robots',
-    expire_date: new Date('2023-10-16T22:40:00'),
-    highest_bid: 1.05,
-    likes: 40
-  }
+
+  @Input()
+  info!: ProductCard;
 
   tag = 'Art';
 

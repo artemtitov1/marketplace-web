@@ -1,0 +1,38 @@
+<app-header></app-header>
+<main>
+    <section class="hero">
+        <div class="hero__content container">
+            <div class="hero__greeting">
+                <h1>Explore, Collect, and Sell NFTs</h1>
+                <div class="hero__subtitle">
+                    <span>On the world's Best & largest NFT marketplace</span>
+                </div>
+                <div class="hero__buttons">
+                    <app-button-large [value]="btn_explore"></app-button-large>
+                    <app-button-large [value]="btn_create" [color_transparent]="color_transparent"></app-button-large>
+                </div>
+            </div>
+            <div class="hero__cards">
+                <app-short-details-card></app-short-details-card>
+                <app-short-details-card></app-short-details-card>
+            </div>
+        </div>
+    </section>
+    <section class="auctions">
+        <div class="title">
+            <h2></h2>
+            <div class="auctions__btns">
+                <button class="round"><</button>
+                <button class="round fill">></button>
+            </div>
+        </div>
+        <div class="card-list">
+            <div class="card-list__cards">
+                <app-product-card *ngFor="let card of live_cards" [info]="card"></app-product-card>
+            </div>
+        </div>
+        <div class="card-list__view-more">
+            <app-button-large [value]="btn_view_more"></app-button-large>
+        </div>
+    </section>
+</main>

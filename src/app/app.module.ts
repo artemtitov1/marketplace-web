@@ -15,6 +15,8 @@ import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { ShortDetailsCardComponent } from './components/short-details-card/short-details-card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,17 @@ import { FooterComponent } from './components/footer/footer.component';
     ShortDetailsCardComponent,
     HeaderComponent,
     FooterComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
