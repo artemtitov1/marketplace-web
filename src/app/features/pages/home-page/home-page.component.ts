@@ -12,10 +12,12 @@ export class HomePageComponent implements OnInit {
   live_cards: ProductCard[] = [];
 
   async ngOnInit() {
-    this.live_cards = await this.svc.generate(4);
+    this.svc.getProducts(4).subscribe((data) => {
+      let JSON_cards = JSON.parse(JSON.stringify(data));
+      this.live_cards = JSON_cards as ProductCard[];
+    });
   }
 
-  
   btn_explore = 'Explore';
   btn_create = 'Create';
   btn_view_more = 'View more';

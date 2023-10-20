@@ -1,8 +1,8 @@
 export interface ProductCard {
     id: number,
-    owner: Promise<string | undefined> | undefined,
-    title: Promise<string  | undefined> | undefined,
-    expire_date: Date,
-    highest_bid: Promise<number> | undefined,
-    likes: Promise<number> | undefined,
+    owner: string | undefined,
+    title: string | undefined,
+    expire_date: string,
+    highest_bid: number | undefined,
+    likes: number | undefined,
 }

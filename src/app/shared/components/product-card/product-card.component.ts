@@ -28,7 +28,8 @@ export class ProductCardComponent implements OnInit{
   }
 
   updateTimeLeft() {
-    this.time_left = this.msFormat(this.countTimeLeft(this.info.expire_date));
+    let string_as_num = Date.parse(this.info.expire_date);
+    this.time_left = this.msFormat(string_as_num);
   }
 
   msFormat(milliseconds: number): string {
