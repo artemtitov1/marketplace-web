@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card__portrait">
+        <img class="portrait" src="./../../../../assets/img/sample.png">
+        <div class="portrait-checked"><img src="./../../../../assets/img/check.svg" alt=""></div>
+    </div>
+    <div class="card__text">
+        <div class="card__text-name">{{data.name + ' ' + data.surname}}</div>
+        <div class="card__text-value">{{data.value | currency: 'USD':'symbol':'.0-2'}}</div>
+    </div>
+</div>

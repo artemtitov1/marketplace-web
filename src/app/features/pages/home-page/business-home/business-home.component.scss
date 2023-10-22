@@ -1,0 +1,47 @@
+.business {
+    position: relative;
+    margin-top: 120px;
+    padding-bottom: 120px;
+    background-color:#04091E;
+    color: white;
+}
+
+.business__cards {
+    margin-top: 46px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.business__card {
+    padding: 48px 28px 44px 28px;
+
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.business__card-img {
+    width: 60px;
+    height: 60px;
+
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+.business__card-title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%; 
+}
+
+.business_card-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+}

@@ -10,6 +10,7 @@ import { ButtonMediumFillComponent } from './components/button-medium-fill/butto
 import { ButtonFillComponent } from './components/button-fill/button-fill.component';
 import { ButtonLargeComponent } from './components/button-large/button-large.component';
 import { DegreePrefixPipe } from './pipes/degree-prefix.pipe';
+import { UserCollectionCardComponent } from './components/user-collection-card/user-collection-card.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DegreePrefixPipe } from './pipes/degree-prefix.pipe';
     ButtonFillComponent,
     ButtonLargeComponent,
     DegreePrefixPipe,
+    UserCollectionCardComponent,
   ],
   imports: [
     CommonModule,
@@ -38,6 +40,7 @@ import { DegreePrefixPipe } from './pipes/degree-prefix.pipe';
     ButtonFillComponent,
     ButtonLargeComponent,
     DegreePrefixPipe,
+    UserCollectionCardComponent
   ]
 })
 export class SharedModule { }

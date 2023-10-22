@@ -1,0 +1,15 @@
+<section class="top-collection inner container">
+    <div class="title">
+        <h2>Top collection</h2>
+        <div class="top-collection__days-input">
+            <div class="top-collection_days-input-text">Last 1 Day</div>
+            <img src="./../../../../assets/img/down.svg">
+        </div>
+    </div>
+    <div class="top-collection__users">
+        <div class="top-collection__item" *ngFor="let user of users; let i = index">
+            <div class="top-collection__item-id">{{i + 1}}</div>
+            <app-user-collection-card [data]="user"></app-user-collection-card>
+        </div>
+    </div>
+</section>

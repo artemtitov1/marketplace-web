@@ -1,0 +1,25 @@
+<section class="auctions inner container">
+    <div class="title">
+        <h2>Live auctions</h2>
+        <div class="auctions__btns">
+            <button class="round">
+                <img src="./../../../../assets/img/left.svg" />
+            </button>
+            <button class="round fill">
+                <img src="./../../../../assets/img/right.svg" />
+            </button>
+        </div>
+    </div>
+    <div class="card-list">
+        <div class="card-list__cards" *ngIf="live_cards.length !== 0; else emptyAuctions">
+                <app-product-card *ngFor="let card of live_cards" [info]="card"></app-product-card>
+        </div>
+
+        <ng-template #emptyAuctions class="hero__subtitle">
+            <div>No live auctions available at the moment</div>
+        </ng-template>
+    </div>
+    <div class="card-list__view-more">
+        <app-button-large [value]="btn_view_more"></app-button-large>
+    </div>
+</section>

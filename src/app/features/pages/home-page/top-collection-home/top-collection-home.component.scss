@@ -1,0 +1,43 @@
+
+.top-collection__days-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.top-collection_days-input-text {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 140%;
+
+    background-image: linear-gradient(95deg, #02FCCF, #1448FF);
+    background-clip: text;
+    color: transparent;
+}
+
+.top-collection__users {
+    display: grid;
+}
+
+.top-collection__users {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    row-gap: 48px;
+}
+
+.top-collection__item {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+
+    align-items: center;
+}
+
+.top-collection__item-id {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 160%;
+
+    color: #04091E;
+}

@@ -1,0 +1,28 @@
+.round {
+    margin-left: 12px;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    border: 1px solid #CDD6D7;
+    background: transparent;   
+}
+
+.fill {
+    background: linear-gradient(95deg, #FCAD02, #FF0041);
+    border: none;
+}
+
+.card-list__cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 32px;
+
+    margin-bottom: 44px;
+}
+
+.card-list__view-more {
+    display: flex;
+    justify-content: center;
+}

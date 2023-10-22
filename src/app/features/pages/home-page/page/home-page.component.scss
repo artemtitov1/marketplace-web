@@ -1,0 +1,46 @@
+.container {
+    max-width: 1320px;
+    margin:auto;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 130%;
+
+    margin: 0 0 28px 0;
+}
+
+h2 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+
+    margin: 0;
+}
+
+.inner {
+    padding-top: 120px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+}
+
+.text_centered {
+    text-align: center;
+}
+
+.color_white {
+    color: white;
+}

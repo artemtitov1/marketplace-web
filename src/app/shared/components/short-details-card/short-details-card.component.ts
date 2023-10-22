@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ShortDetails } from 'src/app/core/models/ShortDetailsCard';
 
 @Component({
@@ -7,9 +7,6 @@ import { ShortDetails } from 'src/app/core/models/ShortDetailsCard';
   styleUrls: ['./short-details-card.component.scss']
 })
 export class ShortDetailsCardComponent {
-  info: ShortDetails = {
-    id: 1,
-    owner: 'User centered',
-    price: 180583
-  }
+  @Input()
+  info!: ShortDetails;
 }

@@ -1,0 +1,79 @@
+.header__figures {
+    margin-top: -112px;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: calc(112px + 637px);
+    z-index: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header__fig1 {
+    position: absolute;
+    width: 1172px;
+    height: 367px;
+    transform: rotate(39deg);
+    background: #0041BE;
+    margin-left: -350px;
+    filter: blur(130px);
+}
+
+.header__fig2 {
+    background: #00FF66;
+    width: 730px;
+    height: 224px;
+    transform: rotate(-43deg);
+    filter: blur(113px);
+    margin-left: 381px;
+    margin-top: 476px;
+}
+
+.header__fig3 {
+    background: #0041BE;
+    width: 706px;
+    height: 234px;
+    transform: rotate(-24deg);
+    filter: blur(113px);
+}
+
+.header__fig4 {
+    background: #FF589C;
+    width: 1000px;
+    height: 600px;
+    transform: rotate(40deg);
+    filter: blur(170px);
+    margin-left: -120px
+}
+
+.hero {
+    position: relative;
+
+    padding-top: 88px;
+    padding-bottom: 120px;
+}
+
+.hero__content {
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 67px;
+}
+
+.hero__subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%; /* 32px */
+    margin-bottom: 52px;
+}
+
+.hero__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+}
+
+.hero__buttons > * + *{
+    margin-left: 21px;
+}

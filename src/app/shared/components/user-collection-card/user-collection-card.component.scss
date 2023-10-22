@@ -1,0 +1,54 @@
+.card {
+    display: flex;
+    gap: 20px;
+}
+
+.card__portrait {
+    position: relative;
+}
+
+.portrait {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+    background-color: #C4C4C4;
+}
+
+.portrait-checked {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(95deg, #FCAD02, #FF0041);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 4px;
+}
+
+.card__text-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+
+    color: #04091E;
+}
+
+.card__text-value {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 130%; 
+
+    color: #747681;
+}

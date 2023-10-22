@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SharedModule } from '../shared/shared.module';
-import { ButtonMediumFillComponent } from '../shared/components/button-medium-fill/button-medium-fill.component';
 
 @NgModule({
   declarations: [
