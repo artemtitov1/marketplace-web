@@ -1,13 +1,15 @@
 .review {
     overflow: hidden;
     background-color: #04091E;
+    padding-bottom: 120px;
 }
 
 .reviews {
     margin-top: 48px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25%);
+    justify-content: center;
     gap: 32px;
 }
 

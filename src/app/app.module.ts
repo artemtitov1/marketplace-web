@@ -13,6 +13,7 @@ import { TopCollectionHomeComponent } from './features/pages/home-page/top-colle
 import { BusinessHomeComponent } from './features/pages/home-page/business-home/business-home.component';
 import { ExploreHomeComponent } from './features/pages/home-page/explore-home/explore-home.component';
 import { ReviewHomeComponent } from './features/pages/home-page/review-home/review-home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ReviewHomeComponent } from './features/pages/home-page/review-home/revi
     HttpClientModule,
     CoreModule,
     SharedModule,
+    BrowserAnimationsModule,
   ],
   providers: [
 
