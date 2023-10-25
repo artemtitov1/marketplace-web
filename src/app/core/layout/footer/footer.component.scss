@@ -182,8 +182,17 @@ option {
 }
 
 .footer__socials img {
-    padding: 12px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer__socials a {
+    display: grid;
     background: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
     border-radius: 50%;
     border:1px solid white;
 }

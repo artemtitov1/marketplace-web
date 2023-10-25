@@ -1,0 +1,15 @@
+<div class="create-item container inner">
+    <div class="create-item__text">
+        <h2>Learn and Earn Free ETH with NFT</h2>
+        <div class="create-item__subtitle">
+            <p>A creative nft business agency that lead & inspire</p>
+        </div>
+        <div class="create-item__buttons">
+            <app-button-fill [value]="btn_create"></app-button-fill>
+            <app-button-large [value]="btn_explore"></app-button-large>
+        </div>
+        <div class="create-item__cards">
+            <app-short-details-card *ngFor="let card of cards"></app-short-details-card>
+        </div>
+    </div>
+</div>

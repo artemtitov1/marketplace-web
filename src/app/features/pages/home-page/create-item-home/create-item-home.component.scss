@@ -1,0 +1,30 @@
+.create-item {
+    padding-bottom: 120px;
+}
+
+.create-item__text {
+    max-width: 500px;
+}
+
+.create-item__subtitle {
+    margin-top: 20px;
+    margin-bottom: 48px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%; 
+    
+    color: #747681;
+}
+
+.create-item__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.create-item__cards {
+    display: grid;
+    align-items: center;
+    gap: 40px;
+}

@@ -27,19 +27,23 @@ export class ProductCardComponent implements OnInit{
     return (expire_time.getTime() - Date.now());
   }
 
+  string_as_num!: number;
+
   updateTimeLeft() {
-    let string_as_num = Date.parse(this.info.expire_date);
-    this.time_left = this.msFormat(string_as_num);
+    this.string_as_num = Date.parse(this.info.expire_date);
+    this.time_left = this.msFormat(this.string_as_num);
   }
 
-  msFormat(milliseconds: number): string {
+  msFormat(ms: number): string {
+    let milliseconds = ms - Date.now(); 
+
     if (milliseconds <= 0) {
       return '';
     }
     
     const weeks = Math.floor(milliseconds / (7 * 24 * 60 * 60 * 1000));
     milliseconds %= 7 * 24 * 60 * 60 * 1000;
-
+    
     const days = Math.floor(milliseconds / (24 * 60 * 60 * 1000));
     milliseconds %= 24 * 60 * 60 * 1000;
 
