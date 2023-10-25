@@ -1,0 +1,36 @@
+.explore {
+    padding-bottom: 120px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 32px;
+}
+
+.tags__parameters {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 32px;
+
+    margin-bottom: 48px;
+}
+
+@media screen and (width < 1340px){
+    .items {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+.items__view-more {
+    display: flex;
+    justify-content: center;
+}

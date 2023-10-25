@@ -12,7 +12,7 @@
     </div>
     <div class="card-list">
         <div class="card-list__cards" *ngIf="live_cards.length !== 0; else emptyAuctions">
-                <app-product-card *ngFor="let card of live_cards" [info]="card"></app-product-card>
+                <app-product-card *ngFor="let card of live_cards" [data]="card"></app-product-card>
         </div>
 
         <ng-template #emptyAuctions class="hero__subtitle">

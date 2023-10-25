@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ShortDetails } from 'src/app/core/models/ShortDetails';
 import { ShortDetailsService } from 'src/app/core/services/short-details.service';
 import { parseJson } from '../page/home-page.component';
+
 @Component({
   selector: 'app-create-item-home',
   templateUrl: './create-item-home.component.html',

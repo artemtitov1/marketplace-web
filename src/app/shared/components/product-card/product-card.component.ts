@@ -9,7 +9,7 @@ import { ProductCard } from 'src/app/core/models/ProductCard';
 export class ProductCardComponent implements OnInit{
 
   @Input()
-  info!: ProductCard;
+  data!: ProductCard;
 
   tag = 'Art';
 
@@ -30,7 +30,7 @@ export class ProductCardComponent implements OnInit{
   string_as_num!: number;
 
   updateTimeLeft() {
-    this.string_as_num = Date.parse(this.info.expire_date);
+    this.string_as_num = Date.parse(this.data.expire_date);
     this.time_left = this.msFormat(this.string_as_num);
   }
 

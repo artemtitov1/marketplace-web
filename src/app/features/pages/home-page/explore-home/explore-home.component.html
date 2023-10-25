@@ -1,1 +1,31 @@
-<p>explore-home works!</p>
+<section class="explore inner container">
+    <h2 class="title">Explore</h2>
+    <div class="tags">
+        <div class="tags__parameters">
+            <select>
+                <option>Photography</option>
+                <option>Art</option>
+                <option>Model</option>
+            </select>
+            <select>
+                <option>Low Price</option>
+                <option>Medium Price</option>
+                <option>High Price</option>
+            </select>
+            <input type="number" name="" id="">
+        </div>
+        <div class="tags__time">
+            <select>
+                <option>Recently added</option>
+                <option>Most popular</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="items">
+        <app-product-card *ngFor="let card of cards" [data]="card"></app-product-card>
+    </div>
+    <div class="items__view-more">
+        <button customButton big white id="btn_view_more" (click)="fetchData()">View more</button>
+    </div>
+</section>
