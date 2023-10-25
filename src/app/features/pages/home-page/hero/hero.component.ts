@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShortDetails } from 'src/app/core/models/ShortDetailsCard';
+import { ShortDetails } from 'src/app/core/models/ShortDetails';
 import { ShortDetailsService } from 'src/app/core/services/short-details.service';
 import { parseJson } from 'src/app/features/pages/home-page/page/home-page.component'
 
@@ -14,9 +14,6 @@ export class HeroComponent implements OnInit {
   constructor(private shortDetailsService: ShortDetailsService) {}
 
   hero_short_cards: ShortDetails[] = [];
-
-  btn_explore = 'Explore';
-  btn_create = 'Create';
 
   color_transparent = true;
 

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ShortDetails } from 'src/app/core/models/ShortDetailsCard';
+import { ShortDetails } from 'src/app/core/models/ShortDetails';
 
 @Component({
   selector: 'app-short-details-card',
@@ -8,5 +8,5 @@ import { ShortDetails } from 'src/app/core/models/ShortDetailsCard';
 })
 export class ShortDetailsCardComponent {
   @Input()
-  info!: ShortDetails;
+  data!: ShortDetails;
 }

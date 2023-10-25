@@ -5,12 +5,9 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { BlogCardComponent } from './components/blog-card/blog-card.component';
 import { NftCardComponent } from './components/nft-card/nft-card.component';
 import { NftValueCardComponent } from './components/nft-value-card/nft-value-card.component';
-import { ButtonMediumComponent } from './components/button-medium/button-medium.component';
-import { ButtonMediumFillComponent } from './components/button-medium-fill/button-medium-fill.component';
-import { ButtonFillComponent } from './components/button-fill/button-fill.component';
-import { ButtonLargeComponent } from './components/button-large/button-large.component';
 import { DegreePrefixPipe } from './pipes/degree-prefix.pipe';
 import { UserCollectionCardComponent } from './components/user-collection-card/user-collection-card.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +16,9 @@ import { UserCollectionCardComponent } from './components/user-collection-card/u
     BlogCardComponent,
     NftCardComponent,
     NftValueCardComponent,
-    ButtonMediumComponent,
-    ButtonMediumFillComponent,
-    ButtonFillComponent,
-    ButtonLargeComponent,
     DegreePrefixPipe,
     UserCollectionCardComponent,
+    ButtonComponent,
   ],
   imports: [
     CommonModule,
@@ -35,12 +29,9 @@ import { UserCollectionCardComponent } from './components/user-collection-card/u
     BlogCardComponent,
     NftCardComponent,
     NftValueCardComponent,
-    ButtonMediumComponent,
-    ButtonMediumFillComponent,
-    ButtonFillComponent,
-    ButtonLargeComponent,
     DegreePrefixPipe,
-    UserCollectionCardComponent
+    UserCollectionCardComponent,
+    ButtonComponent,
   ]
 })
 export class SharedModule { }

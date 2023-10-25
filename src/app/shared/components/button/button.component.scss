@@ -1,0 +1,67 @@
+$colorMap: (
+    orange: (
+        base: linear-gradient(94deg, #FCAD02, #FF0041),
+        text: #fff,
+        border: transparent,
+    ),
+    white: (
+        base: #fff,
+        text: #747681,
+        border: #747681,
+    ),
+    transparent: (
+        base: transparent,
+        text: #04091E,
+        border: #747681,
+    )
+);
+
+$sizeMap: (
+    medium: (
+        padding: 10px 35px,
+    ),
+    big: (
+        padding: 16px 44px,
+    ),
+);
+
+[customButton][medium] {
+    padding: map-get($sizeMap, medium, padding )
+}
+
+[customButton][big] {
+    padding: map-get($sizeMap, big, padding )
+}
+
+[customButton][white] {
+    background: map-get($colorMap, white, base );
+    color: map-get($colorMap, white, text);
+    border-color: map-get($colorMap, white, border );
+}
+
+[customButton][orange] {
+    background: map-get($colorMap, orange, base );
+    color: map-get($colorMap, orange, text);
+    border-color: map-get($colorMap, orange, border );
+}
+
+[customButton][transparent] {
+    background: map-get($colorMap, transparent, base );
+    color: map-get($colorMap, transparent, text);
+    border-color: map-get($colorMap, transparent, border );
+}
+
+.custom-button {
+    border: 1px solid;
+    border-radius: 10vh;
+
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+
+};

@@ -8,7 +8,7 @@
     margin-top: 48px;
 
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
     gap: 32px;
 }
@@ -16,6 +16,7 @@
 .card {
     background: rgb(255, 255, 255, 0.16);
     
+    max-width: 435px;
     padding: 40px;
 }
 

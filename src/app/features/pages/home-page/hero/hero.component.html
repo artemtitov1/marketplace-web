@@ -12,12 +12,12 @@
                 <span>On the world's Best & largest NFT marketplace</span>
             </div>
             <div class="hero__buttons">
-                <app-button-large [value]="btn_explore"></app-button-large>
-                <app-button-large [value]="btn_create" [color_transparent]="color_transparent"></app-button-large>
+                <button customButton big white>Explore</button>
+                <button customButton big transparent>Create</button>
             </div>
         </div>
         <div class="hero__cards">
-            <app-short-details-card *ngFor="let card of hero_short_cards" [info]="card"></app-short-details-card>
+            <app-short-details-card *ngFor="let card of hero_short_cards" [data]="card"></app-short-details-card>
         </div>
     </div>
 </section>

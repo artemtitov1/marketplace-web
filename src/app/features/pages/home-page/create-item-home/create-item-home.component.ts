@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShortDetails } from 'src/app/core/models/ShortDetailsCard';
+import { ShortDetails } from 'src/app/core/models/ShortDetails';
 import { ShortDetailsService } from 'src/app/core/services/short-details.service';
 import { parseJson } from '../page/home-page.component';
 @Component({
@@ -12,9 +12,6 @@ export class CreateItemHomeComponent implements OnInit{
   constructor(private shortDetailsService: ShortDetailsService) {}
 
   cards: ShortDetails[] = [];
-
-  btn_create = 'Create Item';
-  btn_explore = 'Explore More'
 
   ngOnInit(): void {
     this.shortDetailsService.getItems(2).subscribe((data) => {

@@ -1,9 +1,14 @@
 .create-item {
     padding-bottom: 120px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .create-item__text {
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .create-item__subtitle {
@@ -25,6 +30,6 @@
 
 .create-item__cards {
     display: grid;
-    align-items: center;
+    grid-template-columns: repeat(2, auto);
     gap: 40px;
 }

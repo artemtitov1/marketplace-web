@@ -14,7 +14,6 @@ export class HomeAuctionsComponent implements OnInit, OnDestroy{
 
   live_cards: ProductCard[] = [];
   itemsCount: number = 4;
-  btn_view_more = 'View more';
 
   button = document.getElementById('btn_view_more') as HTMLButtonElement;
   unsubscribe$ = new Subject<void>()
