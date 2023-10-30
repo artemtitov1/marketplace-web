@@ -1,10 +1,4 @@
 <div class="header">
-    <div class="header__figures" [ngClass]="transparent ? 'hide' : ''">
-        <div class="header__fig1"></div>
-        <div class="header__fig2"></div>
-        <div class="header__fig3"></div>
-        <div class="header__fig4"></div>
-    </div>
     <div class="header__wrapper container">
         <img src="../../../assets/img/logo.svg" alt="" class="header__logo">
         <div class="header__search-bar">
@@ -25,7 +19,7 @@
                 <li class="header__li">Community</li>
             </a>
             <a href="#">
-                <app-button-medium-fill [value]="value"></app-button-medium-fill>
+                <button customButton orange medium>Create</button>
             </a>
         </ul></nav>
         <div class="header__community-buttons">
